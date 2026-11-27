@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VD – Innovate. Create. Grow.</title>
+<meta name="description" content="VD: innovative digital solutions, web development, UI/UX design and digital marketing.">
+<meta property="og:title" content="VD – Build Your Digital Future">
+<style>
+:root{--n:#060f27;--n2:#0b1b42;--n3:#1b3573;--c:#f6eedc;--c2:#e6d8b6;--ink:#0a1733;--bl:#7fa4ee}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font:16px/1.7 'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--n);color:var(--c);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.15;letter-spacing:-.01em}
+[dir=rtl] *{font-family:'Noto Nastaliq Urdu','Segoe UI',Tahoma,sans-serif;letter-spacing:0}[dir=rtl] h1,[dir=rtl] h2{line-height:1.8}
+a{color:inherit;text-decoration:none}
+.w{max-width:1180px;margin:auto;padding:0 22px}
+svg.i{width:1.1em;height:1.1em;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.17em;flex:none}
+em{font-style:normal;color:var(--bl)}.cr em{color:var(--n3)}
+.b{display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:50px;border:1.5px solid var(--c);background:var(--c);color:var(--ink);font:600 .9rem inherit;font-family:inherit;letter-spacing:.02em;cursor:pointer;transition:.3s}
+.b:hover{transform:translateY(-3px);box-shadow:0 12px 30px #f6eedc30}.b.o{background:none;color:var(--c)}.b.o:hover{background:#f6eedc14}.b.sm{padding:9px 18px;font-size:.8rem}
+.cr .b,.box .b{background:var(--ink);color:var(--c);border-color:var(--ink)}.cr .b.o,.box .b.o{background:none;color:var(--ink)}.b.dg{background:#8a2a2a!important;border-color:#8a2a2a!important;color:#fff!important}
+header{position:fixed;top:0;inset-inline:0;z-index:50;transition:.35s}header.sc{background:#060f27e6;backdrop-filter:blur(14px);box-shadow:0 1px 0 #1b357388}
+.nb{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px}
+nav{display:flex;gap:28px;font-size:.88rem;letter-spacing:.03em}nav a{opacity:.7;padding:6px 0;position:relative;transition:.2s}nav a:after{content:"";position:absolute;bottom:0;inset-inline:0;height:2px;background:var(--c);transform:scaleX(0);transition:.3s}nav a:hover,nav a.on{opacity:1}nav a:hover:after,nav a.on:after{transform:scaleX(1)}
+.r{display:flex;gap:10px;align-items:center}
+select,input,textarea{font:inherit;color:var(--c);background:#0b1b42aa;border:1px solid var(--n3);border-radius:12px;padding:12px 15px;width:100%;outline:none;transition:.2s}input:focus,textarea:focus{border-color:var(--bl);box-shadow:0 0 0 3px #7fa4ee33}select{width:auto;padding:8px 10px}
+.cr input,.cr textarea,.box input,.box select{background:#fffaf0;color:var(--ink);border-color:var(--c2)}
+#bg{display:none;background:none;border:0;color:var(--c);font-size:1.6rem;cursor:pointer}
+section{padding:104px 0;position:relative}.cr{background:var(--c);color:var(--ink)}.nv{background:var(--n2)}
+.sh{text-align:center;max-width:640px;margin:0 auto 56px}.sh small{letter-spacing:.28em;text-transform:uppercase;font-size:.7rem;opacity:.6;display:inline-flex;align-items:center;gap:12px;margin-bottom:14px}.sh small:before,.sh small:after{content:"";width:28px;height:1px;background:currentColor}
+.sh h2{font-size:clamp(1.9rem,4vw,2.8rem)}.sh p{margin-top:14px;opacity:.7}
+.g{display:grid;gap:24px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.cd{background:linear-gradient(160deg,#0f2250,var(--n));border:1px solid var(--n3);border-radius:22px;padding:30px;transition:.4s;position:relative;overflow:hidden}
+.cr .cd{background:#fffaf0;border-color:var(--c2);box-shadow:0 10px 30px #0a173310}.cd:hover{transform:translateY(-8px);box-shadow:0 22px 44px #0a173345;border-color:var(--bl)}
+.cd h3{font-size:1.2rem;margin:18px 0 8px}.cd p{font-size:.92rem;opacity:.72}.cd .n{position:absolute;top:18px;inset-inline-end:24px;font:700 2.6rem Georgia,serif;opacity:.07}
+.ic{width:58px;height:58px;border-radius:16px;background:linear-gradient(135deg,var(--c),var(--c2));color:var(--ink);display:grid;place-items:center;font-size:1.6rem;box-shadow:0 8px 20px #0003}.cr .ic{background:linear-gradient(135deg,var(--n3),var(--ink));color:var(--c)}
+.lm{display:inline-flex;gap:8px;margin-top:18px;font-weight:600;font-size:.85rem;align-items:center;transition:.3s}.cd:hover .lm{gap:14px}
+.th{height:190px;border-radius:16px;margin-bottom:18px;background:linear-gradient(135deg,var(--n3),var(--n));display:grid;place-items:center;font-size:2.4rem;color:var(--c);position:relative;overflow:hidden;border:1px solid #f6eedc1a}
+.th:before{content:"";position:absolute;top:12px;inset-inline-start:14px;width:44px;height:8px;background:radial-gradient(circle,#f6eedc88 3px,transparent 4px) 0 0/15px 8px}
+.th:after{content:"View Project →";position:absolute;inset:0;background:#060f27d9;display:grid;place-items:center;font:600 .9rem inherit;opacity:0;transition:.4s}.cd:hover .th:after{opacity:1}
+.rv{opacity:0;transform:translateY(36px);transition:.9s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 80px;background:radial-gradient(circle at 75% 45%,#17398a 0,transparent 55%),radial-gradient(circle at 10% 90%,#0f2a6a 0,transparent 40%),linear-gradient(160deg,#040a1c,var(--n2));overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#f6eedc0c 1px,transparent 1px),linear-gradient(90deg,#f6eedc0c 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(circle at 60% 50%,#000,transparent 72%)}
+.hero .w{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;position:relative}
+.eb{display:inline-flex;gap:10px;align-items:center;border:1px solid #f6eedc44;background:#f6eedc0d;padding:7px 16px;border-radius:40px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px}.eb:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--bl);box-shadow:0 0 10px var(--bl)}
+.hero h1{font-size:clamp(2.4rem,5.6vw,4.4rem)}.hero p{margin:24px 0 34px;font-size:1.12rem;opacity:.78;max-width:500px}
+.hb{display:flex;gap:14px;flex-wrap:wrap}.tk{display:flex;gap:26px;margin-top:40px;flex-wrap:wrap;font-size:.86rem;opacity:.8}.tk span{display:flex;gap:8px;align-items:center}.tk svg{color:var(--bl)}
+.vis{position:relative;aspect-ratio:1;max-width:540px;margin:auto;width:100%;display:grid;place-items:center}
+.ring{position:absolute;border-radius:50%;border:1px solid #f6eedc2a}.r1{inset:3%}.r2{inset:14%;border-style:dashed;border-color:#7fa4ee55;animation:spin 40s linear infinite reverse}
+.orb{position:absolute;inset:3%;animation:spin 20s linear infinite}.orb i{position:absolute;top:-6px;left:50%;width:12px;height:12px;border-radius:50%;background:var(--c);box-shadow:0 0 18px var(--c)}
+.core{width:62%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 25%,#244ba8,#0a1a45 72%);border:1px solid #f6eedc44;box-shadow:0 0 90px #2d56b877,inset 0 0 50px #7fa4ee33;display:grid;place-items:center;animation:fl 6s ease-in-out infinite}
+.core .lgx{width:74%}
+.chip{position:absolute;display:flex;gap:10px;align-items:center;background:#0b1b42bb;border:1px solid #f6eedc33;backdrop-filter:blur(10px);padding:11px 18px;border-radius:16px;font-size:.8rem;font-weight:600;box-shadow:0 12px 30px #0006;animation:fl 5s ease-in-out infinite}.chip svg{color:var(--bl);font-size:1.2rem}
+.c1{top:7%;inset-inline-start:0}.c2{top:50%;inset-inline-end:-3%;animation-delay:1s}.c3{bottom:8%;inset-inline-start:4%;animation-delay:2s}
+.scr{position:absolute;bottom:26px;left:50%;width:24px;height:38px;border:1.5px solid #f6eedc77;border-radius:14px}.scr:after{content:"";position:absolute;top:7px;left:50%;width:3px;height:7px;margin-left:-1.5px;background:var(--c);border-radius:3px;animation:sd 1.8s infinite}
+/* logo animation */
+.lgx .dr{fill-opacity:0;stroke-width:1.2;stroke-dasharray:500;stroke-dashoffset:500;animation:dw 2.2s ease forwards,fi 1.2s 1.7s forwards}.lgx .d{animation-delay:.5s,2s}.lgx .v{stroke:#fff}.lgx .d{stroke:#9bbaf5}
+.lgx .sq{opacity:0;animation:fi2 1s 2.4s forwards}.lgx{filter:drop-shadow(0 0 14px #7fa4ee66)}.lgx.pl{animation:gl 4s 3s ease-in-out infinite}
+.lgx.st .dr{animation:none;stroke-dashoffset:0;fill-opacity:1}.lgx.st .sq{animation:none;opacity:1}.lgx.st{filter:none;background:none}.lgx.st .dr{stroke:none}
+@keyframes dw{to{stroke-dashoffset:0}}@keyframes fi{to{fill-opacity:1}}@keyframes fi2{to{opacity:1}}@keyframes gl{50%{filter:drop-shadow(0 0 26px #a9c4ffcc)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes fl{50%{transform:translateY(-14px)}}@keyframes sd{to{transform:translateY(13px);opacity:0}}
+/* misc */
+.fl{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}.fl .b.on{background:var(--c);color:var(--ink)}
+.pc.rec{border:2px solid var(--ink);transform:scale(1.04);background:linear-gradient(160deg,#fff,#fffaf0)}.pc ul{list-style:none;margin:20px 0 26px}.pc li{padding:7px 0;font-size:.92rem;display:flex;gap:10px;align-items:center;border-bottom:1px solid var(--c2)}.pc li svg{color:var(--n3)}
+.tg{display:inline-block;background:var(--ink);color:var(--c);padding:4px 14px;border-radius:20px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}
+.qt{max-width:720px;margin:auto;text-align:center;min-height:180px}.qt .q{font-size:4rem;line-height:.5;color:var(--bl);font-family:Georgia,serif}.qt p{font:italic 1.35rem/1.6 Georgia,serif}.qt b{display:block;margin-top:18px}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:26px}.dots i{width:9px;height:9px;border-radius:9px;background:#f6eedc44;cursor:pointer;transition:.3s}.dots i.on{background:var(--c);width:28px}
+.ac{border:1px solid var(--c2);border-radius:16px;margin-bottom:14px;background:#fffaf0;overflow:hidden}.ac button{width:100%;background:none;border:0;padding:20px 24px;font:600 1rem inherit;font-family:inherit;color:var(--ink);text-align:start;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.ac div{max-height:0;overflow:hidden;transition:.4s;padding:0 24px;opacity:.75}.ac.op div{max-height:150px;padding:0 24px 20px}.ac svg{transition:.3s}.ac.op svg{transform:rotate(45deg)}
+.f{display:grid;gap:14px}.er{color:#ff9b9b;font-size:.82rem;min-height:1.1em}.box .er{color:#b42318}
+.cl{display:grid;gap:22px;align-content:start}.cl div{display:flex;gap:16px;align-items:center}.cl .ic{width:52px;height:52px;font-size:1.3rem}
+footer{background:#040b1e;padding:70px 0 26px;font-size:.9rem}footer .g{grid-template-columns:1.4fr 1fr 1fr 1.4fr}footer a{display:block;opacity:.65;padding:4px 0;transition:.2s}footer a:hover{opacity:1;padding-inline-start:6px}
+.so{display:flex;gap:10px;margin-top:16px}.so a{width:40px;height:40px;border-radius:50%;border:1px solid var(--n3);display:grid;place-items:center;padding:0;opacity:1}.so a:hover{background:var(--c);color:var(--ink);padding:0}
+.cp{text-align:center;opacity:.5;margin-top:40px;padding-top:22px;border-top:1px solid var(--n3);font-size:.8rem}
+.wa,.cb{position:fixed;bottom:24px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:1.5rem;z-index:60;box-shadow:0 10px 28px #0009;border:0;cursor:pointer;transition:.3s}.wa:hover,.cb:hover{transform:scale(1.1)}
+.wa{inset-inline-start:24px;background:#25d366;color:#fff}.cb{inset-inline-end:24px;background:var(--c);color:var(--ink)}
+#ch{position:fixed;bottom:94px;inset-inline-end:24px;width:340px;max-width:calc(100vw - 48px);background:var(--n2);border:1px solid var(--n3);border-radius:20px;z-index:60;display:none;flex-direction:column;overflow:hidden;box-shadow:0 20px 50px #000a}#ch.on{display:flex}
+#ch .h{background:var(--c);color:var(--ink);padding:14px 18px;font-weight:700;display:flex;justify-content:space-between}#ms{height:240px;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:8px}
+.m{padding:10px 14px;border-radius:14px;font-size:.88rem;background:var(--n);max-width:85%}.m.u{background:var(--c);color:var(--ink);align-self:flex-end}
+.cs{display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 10px}.cs span{font-size:.74rem;border:1px solid var(--n3);padding:4px 11px;border-radius:20px;cursor:pointer}.cs span:hover{background:var(--c);color:var(--ink)}#ch form{display:flex;gap:6px;padding:10px;border-top:1px solid var(--n3)}
+#mo{position:fixed;inset:0;background:#030816d9;z-index:120;display:none;place-items:center;padding:16px;backdrop-filter:blur(6px)}#mo.on{display:grid}
+.box{background:var(--c);color:var(--ink);border-radius:24px;padding:34px;width:100%;max-width:460px;max-height:90vh;overflow:auto;position:relative;animation:pop .3s}.box h2{margin-bottom:18px}
+.x{position:absolute;top:14px;inset-inline-end:18px;background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--ink)}@keyframes pop{from{transform:scale(.92);opacity:0}}
+.sl{display:flex;gap:8px;flex-wrap:wrap}.sl .b:disabled{opacity:.3;cursor:not-allowed;text-decoration:line-through}.sl .b.on{background:var(--ink);color:var(--c)}
+.pm label{display:flex;gap:12px;padding:14px;border:1.5px solid var(--c2);border-radius:14px;margin-bottom:8px;cursor:pointer;align-items:center}.pm input{width:auto}
+#toast{position:fixed;top:90px;inset-inline-end:20px;z-index:200;display:grid;gap:8px}#toast div{background:var(--c);color:var(--ink);padding:13px 22px;border-radius:14px;box-shadow:0 10px 30px #000a;animation:pop .3s;font-weight:600}#toast .e{background:#9b2c2c;color:#fff}
+#ds{position:fixed;inset:0;background:var(--n);z-index:100;display:none;overflow:auto}#ds.on{display:grid;grid-template-columns:250px 1fr}
+.sd{background:#040b1e;border-inline-end:1px solid var(--n3);padding:20px;position:sticky;top:0;height:100vh;overflow:auto}.sd a{display:flex;gap:10px;align-items:center;padding:12px 14px;border-radius:12px;opacity:.7;cursor:pointer;margin:3px 0}.sd a.on,.sd a:hover{background:var(--n2);opacity:1}
+.mn{padding:26px;min-width:0}.tp{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;gap:10px;flex-wrap:wrap}
+.bar{height:9px;background:var(--n);border-radius:9px;overflow:hidden;margin:10px 0}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--bl),var(--c));transition:.6s}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:.88rem}th,td{padding:13px;text-align:start;border-bottom:1px solid var(--n3);white-space:nowrap}th{opacity:.55;font-weight:600}
+.st{padding:3px 12px;border-radius:20px;font-size:.74rem;background:#1f6b45}.st.p{background:#8a6a1f}.st.x{background:#8a2a2a}.mb{display:none}
+.ab{--k:#050506;--gr:#16171b;--gr2:#2b2d34;--gt:#9ca0aa;--bu:#2f6bff;background:var(--k);color:#e8e9ec;position:relative;overflow:hidden}
+.ab:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 12% 18%,#1c1d22 0,transparent 42%),radial-gradient(circle at 90% 85%,#141519 0,transparent 40%);pointer-events:none}
+.ab .w{position:relative}.abg{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
+.abl{display:inline-flex;align-items:center;gap:12px;letter-spacing:.28em;text-transform:uppercase;font-size:.7rem;color:var(--gt);margin-bottom:16px}.abl:before{content:"";width:34px;height:2px;background:var(--bu)}
+.abt h2{font-size:clamp(2rem,4.4vw,3.2rem);color:#fff}.abt em{color:var(--bu)}.abt p{color:var(--gt);margin-top:18px;max-width:540px}
+.abk{list-style:none;margin:26px 0 32px;display:grid;gap:12px}.abk li{display:flex;gap:12px;align-items:center;color:#d0d2d8;font-size:.95rem}.abk svg{color:var(--bu)}
+.ab .b{background:var(--bu);border-color:var(--bu);color:#fff}.ab .b:hover{box-shadow:0 12px 30px #2f6bff55}
+.abv{position:relative;max-width:520px;width:100%;margin:auto;padding:26px 0 34px}.abv:before{content:"";position:absolute;inset:10%;background:radial-gradient(circle,#2f6bff2e,transparent 65%);filter:blur(20px)}
+.mk{position:relative;background:var(--gr);border:1px solid var(--gr2);border-radius:24px;padding:22px;box-shadow:0 30px 60px #000a}
+.mkh{display:flex;gap:7px;margin-bottom:22px}.mkh i{width:10px;height:10px;border-radius:50%;background:var(--gr2)}
+.mkb{display:grid;grid-template-columns:130px 1fr;gap:24px;align-items:center}
+.rg{aspect-ratio:1;border-radius:50%;background:conic-gradient(var(--bu) 0 72%,var(--gr2) 0);-webkit-mask:radial-gradient(circle,transparent 56%,#000 57%);mask:radial-gradient(circle,transparent 56%,#000 57%)}
+.ln{display:grid;gap:14px}.ln b{display:block;height:10px;border-radius:10px;background:var(--gr2)}.ln b:first-child{background:linear-gradient(90deg,var(--bu) 70%,var(--gr2) 0)}
+.mkr{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.mkr span{height:62px;border-radius:12px;background:#0d111a;border:1px solid var(--gr2);display:grid;place-items:center;color:var(--gt);font-size:1.4rem}
+.fc{position:absolute;display:flex;gap:10px;align-items:center;background:var(--gr);border:1px solid var(--gr2);padding:12px 18px;border-radius:16px;font-size:.8rem;font-weight:600;color:#e6e9f2;box-shadow:0 16px 36px #000b;animation:fl 5s ease-in-out infinite}.fc svg{color:var(--bu);font-size:1.2rem}
+.fc1{top:-4px;inset-inline-end:-6px}.fc2{bottom:0;inset-inline-start:-10px;animation-delay:1.5s}
+.pr{position:relative;background:linear-gradient(160deg,#1b1c21,#0d0e11);border:1px solid var(--gr2);border-radius:26px;padding:34px 32px;box-shadow:0 30px 60px #000a}
+.prh{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-bottom:20px;margin-bottom:28px;border-bottom:1px solid var(--gr2)}
+.prh span{font-family:Georgia,serif;font-weight:700;font-size:1.3rem;color:#fff}.prh small{color:var(--gt);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+.prl{list-style:none;position:relative;display:grid;gap:28px}.prl:before{content:"";position:absolute;inset-inline-start:21px;top:22px;bottom:22px;width:1px;background:var(--gr2)}
+.prl li{display:flex;gap:20px;align-items:flex-start;position:relative}
+.prl b{flex:none;width:44px;height:44px;border-radius:50%;background:var(--k);border:1px solid var(--gr2);color:var(--bu);display:grid;place-items:center;font-weight:700;font-size:.85rem;transition:.3s;z-index:1}
+.prl li:hover b{background:var(--bu);color:#fff;border-color:var(--bu)}
+.prl h4{color:#fff;font-size:1.05rem;margin-top:2px}.prl p{color:var(--gt);font-size:.88rem;margin-top:2px;line-height:1.55}
+@media(max-width:600px){.pr{padding:26px 22px}}
+.abm{margin-top:80px}.abc{background:var(--gr);border:1px solid var(--gr2);border-radius:20px;padding:30px;transition:.35s}.abc:hover{transform:translateY(-6px);border-color:var(--bu);box-shadow:0 18px 40px #2f6bff22}
+.abc .ai{width:50px;height:50px;border-radius:14px;background:#2f6bff1f;color:var(--bu);display:grid;place-items:center;font-size:1.4rem}.abc h3{color:#fff;margin:18px 0 8px;font-size:1.2rem}.abc p{color:var(--gt);font-size:.92rem}
+@media(max-width:960px){.abg{grid-template-columns:1fr;gap:48px}.abt{order:-1}.abm{margin-top:56px}}
+@media(max-width:600px){.mkb{grid-template-columns:90px 1fr;gap:16px}.fc{padding:9px 13px;font-size:.72rem}}
+.th img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.nl .th:after{display:none}
+.sv{display:flex;flex-wrap:wrap;justify-content:center;gap:24px}.sv .cd{flex:0 1 calc(33.333% - 16px)}@media(max-width:960px){.sv .cd{flex-basis:calc(50% - 12px)}}@media(max-width:600px){.sv .cd{flex-basis:100%}}
+.tm{display:flex;flex-wrap:wrap;justify-content:center;gap:24px}.tm .cd{flex:0 1 calc(25% - 18px);text-align:center}.tm .sk{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:14px}.tm .sk span{font-size:.7rem;padding:3px 11px;border-radius:20px;background:#f6eedc14;color:var(--c2);border:1px solid #f6eedc22;font-weight:600}
+.pj small{letter-spacing:.14em;text-transform:uppercase;font-size:.68rem;opacity:.6}
+@media(min-width:961px) and (max-width:1120px){nav{gap:16px;font-size:.8rem}}
+@media(max-width:960px){.tm .cd{flex-basis:calc(50% - 12px)}}@media(max-width:600px){.tm .cd{flex-basis:100%}}
+@media(max-width:960px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}.hero .w{grid-template-columns:1fr}.vis{order:-1;max-width:360px}footer .g{grid-template-columns:1fr 1fr}
+nav{display:none;position:absolute;top:76px;inset-inline:0;background:var(--n);flex-direction:column;padding:22px;gap:16px;border-bottom:1px solid var(--n3)}nav.on{display:flex}#bg{display:block}.hd{display:none}
+#ds.on{grid-template-columns:1fr}.sd{position:fixed;inset-block:0;inset-inline-start:0;width:240px;z-index:5;transform:translateX(-110%);transition:.3s}[dir=rtl] .sd{transform:translateX(110%)}.sd.on{transform:none}.mb{display:inline-flex}}
+@media(max-width:600px){.g4,.g3,.g2{grid-template-columns:1fr}footer .g{grid-template-columns:1fr}section{padding:72px 0}.pc.rec{transform:none}.c2{display:none}.tk{gap:14px}.chip{padding:8px 12px;font-size:.72rem}}
+</style>
+</head>
+<body>
+<div id="toast"></div><div id="mo"></div><div id="ds"></div>
+<header id="hd"><div class="w nb"><a href="#home" aria-label="VD home" data-logo="st" style="width:62px"></a>
+<nav id="nv"><a href="#home" data-i="home">Home</a><a href="#about" data-i="about">About</a><a href="#services" data-i="services">Services</a><a href="#projects" data-i="projects">Projects</a><a href="#portfolio" data-i="portfolio">Portfolio</a><a href="#faq" data-i="faq">FAQ</a><a href="#contact" data-i="contact">Contact</a></nav>
+<div class="r"><select id="lg" aria-label="Language"><option value="en">EN</option><option value="ur">اردو</option></select><button class="b o sm hd" id="li" data-i="login">Login</button><button class="b sm hd" id="bk"><span data-i="cta">Get a Consultation</span></button><button id="bg" aria-label="Menu" data-ic="menu"></button></div></div></header>
+<main>
+<section id="home" class="hero"><div class="w"><div>
+<div class="eb">Digital Agency</div>
+<h1><span data-i="h1">Build Your Digital Future with</span> <em>VeqDev</em></h1><p data-i="sub">Innovative digital solutions and creative services — crafted to help your business grow.</p>
+<div class="hb"><a class="b" href="#services"><span data-i="exp">Explore Services</span> <i data-ic="arrow"></i></a><button class="b o" id="hc"><i data-ic="msg"></i> <span data-i="bc">Book a Call</span></button></div>
+<div class="tk"><span><i data-ic="check"></i>Creative Designs</span><span><i data-ic="check"></i>Powerful Solutions</span><span><i data-ic="check"></i>Real Results</span></div></div>
+<div class="vis"><div class="ring r1"></div><div class="ring r2"></div><div class="orb"><i></i></div><div class="core" data-logo="pl"></div>
+<div class="chip c1"><i data-ic="code"></i>Development</div><div class="chip c2"><i data-ic="design"></i>UI/UX Design</div><div class="chip c3"><i data-ic="chart"></i>Grow Your Business</div></div></div><div class="scr"></div></section>
+
+<section id="about" class="ab"><div class="w">
+<div class="abg">
+<div class="abv rv"><div class="pr"><div class="prh"><span>How We Work</span><small>4 simple steps</small></div><ol class="prl">
+<li><b>01</b><div><h4>Discover</h4><p>We learn your business, goals and audience.</p></div></li>
+<li><b>02</b><div><h4>Design</h4><p>Clear, modern visuals that match your brand.</p></div></li>
+<li><b>03</b><div><h4>Develop</h4><p>Fast, responsive and scalable build with clean code.</p></div></li>
+<li><b>04</b><div><h4>Launch &amp; Grow</h4><p>We go live, then support and optimize your results.</p></div></li></ol></div></div>
+<div class="abt rv"><span class="abl">About VD</span><h2>We turn bold ideas into <em>digital experiences</em></h2>
+<p>VeqDev is a creative digital agency. We combine design, technology and strategy to build websites, brands and marketing that help businesses grow.</p>
+<p>From the first sketch to the final launch, we work closely with you so every project is clear, on time and built around your goals.</p>
+<ul class="abk"><li><i data-ic="check"></i>Custom, mobile-first websites and web apps</li><li><i data-ic="check"></i>Modern design that is clear and on-brand</li><li><i data-ic="check"></i>Marketing focused on measurable growth</li><li><i data-ic="check"></i>Professional video editing for reels, ads and promos</li></ul>
+<a class="b" href="#contact">Work with us <i data-ic="arrow"></i></a></div></div>
+<div class="g g3 abm"><div class="abc rv"><div class="ai" data-ic="target"></div><h3>Our Mission</h3><p>To deliver innovative digital solutions that create real, measurable results for our clients.</p></div><div class="abc rv"><div class="ai" data-ic="eye"></div><h3>Our Vision</h3><p>To become the most trusted digital brand in Pakistan and beyond.</p></div><div class="abc rv"><div class="ai" data-ic="shield"></div><h3>Our Values</h3><p>Quality, integrity, creativity and honest communication in everything we do.</p></div></div>
+</div></section>
+
+<section id="services" class="cr"><div class="w"><div class="sh rv"><small>What we do</small><h2 data-i="os">Our Services</h2><p>Comprehensive digital services to help you grow and succeed.</p></div><div class="sv" id="sv"></div></div></section>
+
+<section id="projects" class="nv"><div class="w"><div class="sh rv"><small>Our work</small><h2 data-i="pj">Our Projects</h2><p>Explore some of our latest projects and success stories.</p></div><div class="fl" id="pf"></div><div class="g g4" id="pg"></div></div></section>
+
+<section id="why" class="cr"><div class="w"><div class="sh rv"><small>Who we are</small><h2 data-i="ab">Why Choose VD</h2><p>A passionate team turning ideas into polished digital products.</p></div>
+<div class="g g4" id="wy"></div>
+</div></section>
+
+<section id="portfolio"><div class="w"><div class="sh rv"><small>Our team</small><h2 data-i="op">Our Portfolio</h2><p>Meet the people behind every project.</p></div><div class="tm" id="tm"></div></div></section>
+
+<section id="testimonials" class="nv"><div class="w"><div class="sh rv"><small>Testimonials</small><h2 data-i="ts">What Our Clients Say</h2></div><div class="qt" id="qt"></div><div class="dots" id="dt"></div></div></section>
+
+<section id="faq" class="cr"><div class="w" style="max-width:780px"><div class="sh rv"><small>Help</small><h2 data-i="fq">Frequently Asked Questions</h2></div><div id="fa"></div><div style="text-align:center;margin-top:38px"><button class="b" data-b>Book a Free Consultation</button></div></div></section>
+
+<section id="contact" class="nv"><div class="w"><div class="sh rv"><small>Get in touch</small><h2 data-i="ct">Contact Us</h2></div><div class="g g2" style="gap:50px">
+<div class="cl rv"><div><span class="ic" data-ic="phone"></span><span id="ph"></span></div><div><span class="ic" data-ic="mail"></span><span id="em"></span></div><div><span class="ic" data-ic="pin"></span><span id="ci"></span></div></div>
+<form class="f rv" id="cf" novalidate><input name="n" placeholder="Full name"><input name="e" type="email" placeholder="Email"><input name="p" placeholder="Phone"><textarea name="m" rows="4" placeholder="Message"></textarea><div class="er"></div><button class="b" style="justify-self:start">Send Message <i data-ic="send"></i></button></form></div></div></section>
+</main>
+<footer><div class="w"><div class="g"><div><div data-logo="st" style="width:84px"></div><p style="opacity:.6;margin-top:12px">Innovate. Create. Grow.</p><div class="so"><a href="https://web.facebook.com/profile.php?id=61596445365823" target="_blank" rel="noopener" aria-label="Facebook" data-ic="fb"></a><a href="https://www.instagram.com/veqdev_digital_house?lqvp=MWx0bGs1aDc4aHEwNQ==" target="_blank" rel="noopener" aria-label="Instagram" data-ic="ig"></a></div></div>
+<div><b>Quick Links</b><a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a></div>
+<div><b>Contact Us</b><a id="fp"></a><a id="fe"></a><a id="fc"></a></div>
+<div><b>Newsletter</b><form id="nl" style="display:flex;gap:8px;margin-top:10px"><input type="email" required placeholder="Your email"><button class="b sm" aria-label="Subscribe" data-ic="send"></button></form></div></div>
+<div class="cp">© 2026 VD. All Rights Reserved. &nbsp;|&nbsp; Privacy Policy &nbsp;|&nbsp; Terms &amp; Conditions &nbsp;|&nbsp; Refund Policy</div></div></footer>
+<a class="wa" id="wa" target="_blank" rel="noopener" aria-label="WhatsApp" data-ic="phone"></a><button class="cb" id="cb" aria-label="Chat" data-ic="msg"></button>
+<div id="ch"><div class="h">VD Assistant <small>● Online</small></div><div id="ms"></div><div class="cs"><span>Services?</span><span>Pricing?</span><span>Talk to human</span></div><form id="cfm"><input id="cin" placeholder="Type a message…" autocomplete="off"><button class="b sm" aria-label="Send" data-ic="send"></button></form></div>
+
+<script>
+/* ===== CONFIG – edit here ===== */
+const CFG={wa:'923206960923',nums:[['0320 6960923','923206960923'],['0313 6429547','923136429547']],msg:'Hello VD, I want to know more about your services.',email:'veqdevdigitalhouse@gmail.com',phone:'0320 6960923 | 0313 6429547',city:'Jauhrabad, Pakistan'};
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+/* ===== Icons (professional line icons) ===== */
+const IC={code:'<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>',design:'<path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/>',chart:'<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>',layers:'<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>',phone:'<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>',mail:'<rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/>',pin:'<path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',zap:'<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/>',users:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/>',target:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',user:'<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',msg:'<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',arrow:'<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>',check:'<polyline points="20 6 9 17 4 12"/>',send:'<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>',img:'<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>',menu:'<line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/>',plus:'<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>',fb:'<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',in:'<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>',yt:'<path d="M22.5 6.4a2.8 2.8 0 0 0-2-2C18.9 4 12 4 12 4s-6.900 0-8.600.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 11.800a29 29 0 0 0 .4 5.300 2.800 2.800 0 0 0 2 2C5.100 19.500 12 19.500 12 19.500s6.900 0 8.600-.4a2.800 2.800 0 0 0 2-2 29 29 0 0 0 .4-5.300 29 29 0 0 0-.5-5.400z"/><polygon points="9.750 15 15.500 11.750 9.750 8.500"/>',ig:'<rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1"/>',home:'<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',bell:'<path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>',file:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>',back:'<line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>',out:'<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>'};
+IC.eye='<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>';
+IC.video='<polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/>';
+const I=n=>`<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${IC[n]||''}</svg>`;
+const ics=(r=document)=>$$('[data-ic]',r).forEach(e=>{e.innerHTML=I(e.dataset.ic);e.removeAttribute('data-ic')});
+/* ===== Logo: refined VD monogram (replace with <img src="logo.png"> for your exact file) ===== */
+const logo=c=>`<svg class="lgx ${c}" viewBox="0 0 160 92" role="img" aria-label="VD logo"><defs><linearGradient id="gv${c}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#e9dfc4"/><stop offset="1" stop-color="#b8aa84"/></linearGradient><linearGradient id="gd${c}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a9c4ff"/><stop offset="1" stop-color="#2b55c0"/></linearGradient></defs>
+<g class="sq" fill="#7fa4ee"><rect x="4" y="4" width="9" height="9"/><rect x="16" y="14" width="6" height="6"/><rect x="4" y="16" width="5" height="5"/></g>
+<path class="dr d" fill="url(#gd${c})" d="M74 16H106C132 16 148 28 148 46S132 76 106 76H70L79 63H104C120 63 132 56 132 46S120 29 104 29H74Z"/>
+<path class="dr v" fill="${c=='st'?'#f6eedc':'url(#gv'+c+')'}" d="M10 16H38L60 58L82 16H96L66 78H54Z"/></svg>`;
+/* ===== Data (mock – connect your API here) ===== */
+const api={contact:d=>Promise.resolve(d),newsletter:d=>Promise.resolve(d),login:d=>Promise.resolve(d)};
+let services=[['code','Web Development','Modern, fast and scalable websites and web apps built to convert.'],['design','Canva Design','Eye-catching social posts, banners, flyers and presentations designed in Canva.'],['video','Video Editing','Professional reels, ads and promo videos edited to grab attention.'],['chart','Digital Marketing','Grow your brand online with SEO, social media and paid campaigns.'],['layers','Branding & Identity','Logos and visual identities that make your business memorable.']];
+let users=[{id:1,n:'Sara Khan',e:'sara@mail.com',r:'Client',s:'Active'},{id:2,n:'Ali Raza',e:'ali@mail.com',r:'Client',s:'Active'},{id:3,n:'Admin VD',e:'admin@vd.com',r:'Admin',s:'Active'}];
+const orders=[['#1001','Sara Khan','Web Development',499,'Completed'],['#1002','Ali Raza','UI/UX Design',299,'Pending'],['#1003','Hina M.','Digital Marketing',399,'Failed']];
+
+const works=[
+  { title:'Star Tea – Premium Tea Website',     category:'Web',       link:'https://poetic-alpaca-2c59ca.netlify.app/', image:'agency 1.jpeg' },
+  { title:'ColorJoy – Interactive Coloring Book', category:'Design',    link:'Color-by-Number-Book.pdf', image:'design.jpeg' },
+  { title:'SecureAuth – User Authentication System',      category:'Web',       link:'https://login-authentication-system-5.netlify.app/', image:'authentic.jpeg' },
+  { title:'Spooky Vibes – Halloween Planner',     category:'Design',    link:'spooky.pdf', image:'happy.jpeg' },
+  { title:'SEO Growth Campaign',   category:'Marketing', link:'crave-click.html', image:'crave.jpeg' },
+  { title:'Einstein Legacy – Tribute Website ',    category:'Web',       link:' https://einstein-tribute-5.netlify.app/', image:'albert.jpeg' },
+  { title:'BeatVibe – Earbuds Website',    category:'Web',       link:'https://jazzy-churros-9cb850.netlify.app', image:'buds.jpeg' },
+  { title:'Glass Beauty – Premium Skincare', category:'Marketing', link:'glass-beauty.html', image:'beauty.jpeg' },
+];
+/* ============================ END OF PROJECTS ============================ */
+const why=[['zap','Fast Delivery','Quick turnaround without compromising quality.'],['shield','Reliable Support','Friendly help before and after launch.'],['users','Expert Team','Designers, developers and marketers in one place.'],['target','Result Driven','Everything we build is focused on your growth.']];
+/* 7 team members: [name, role, (unused), (unused), description] – edit freely */
+const team=[['Sawaira Dilfraiz','AI Content Creation, Canva Designing',[],'','Skilled in creating engaging AI-generated posts and videos, designing creative posters and planners, video editing, and managing social media accounts.'],
+['Syed Darain Abbas','Web Development, App Development',[],'','Specializes in developing websites and mobile applications, along with AI automation to build smart and efficient digital solutions.'],
+['Aleena Aslam','AI Content Creator & Creative Designer',[],'','Creates eye-catching AI-generated posts and videos, designs professional Canva planners and e-books, and edits engaging videos and creative posters for clients.'],
+['Taskeen Fatima','Social Media Manager and Strategy',[],'','Creates engaging AI-powered content, manages social media platforms, and runs Meta Ads to help businesses grow their online presence and reach the right audience.'],
+['Syeda Sania Zahra','Video Editor & AI Content Specialist',[],'','Creates engaging videos, AI-generated posts, and creative carousels. Specializes in AI video generation and social media management to make brands stand out online.'],
+['Hijab Fatima','Full-Stack Web Developer & Bug Fixing',[],'','Develops responsive websites, fixes technical bugs, and creates stunning AI-animated videos. Combines web development skills with creative AI solutions to deliver engaging digital experiences.'],
+['Aqsa Kalsoom','Frontend Developer & AI Animation',[],'','Builds modern, responsive, and visually appealing website interfaces. Also creates creative AI animations and engaging visual content to bring digital ideas to life.']];
+const plans=[['Starter',199,['5-page website','Basic SEO','1 revision']],['Growth',499,['10-page website','Advanced SEO','Marketing setup','3 revisions'],1],['Full Service',999,['Custom web app','Branding','Marketing','Priority support']]];
+const faqs=[['How long does a website take?','Most business websites are delivered in 2–4 weeks.'],['Which payment methods do you accept?','Card, JazzCash and Easypaisa (integration-ready UI).'],['Do you offer support after launch?','Yes, every package includes post-launch support.'],['Can I book a free consultation?','Absolutely – use the Get a Consultation button.']];
+const revs=[['VD built our business website in two weeks. Professional, responsive and truly excellent support!','Sara Khan','Business Owner'],['Our brand identity and marketing results improved a lot after working with the VD team.','Usman A.','Startup Founder'],['Clean design, clear communication and on-time delivery. Highly recommended.','Fatima R.','Marketing Manager']];
+const ms=['Discovery','Design','Development','Testing','Launch'];let done=[0,1];let lang='en';
+/* ===== i18n ===== */
+const D={en:{home:'Home',services:'Services',portfolio:'Portfolio',about:'About',projects:'Projects',pj:'Our Projects',pricing:'Pricing',faq:'FAQ',contact:'Contact',login:'Login',cta:'Get a Consultation',h1:'Build Your Digital Future with',sub:'Innovative digital solutions and creative services — crafted to help your business grow.',exp:'Explore Services',bc:'Book a Call',os:'Our Services',op:'Our Portfolio',ab:'Why Choose VD',pt:'Packages & Pricing',ts:'What Our Clients Say',fq:'Frequently Asked Questions',ct:'Contact Us'},
+ur:{home:'ہوم',services:'خدمات',portfolio:'پورٹ فولیو',about:'ہمارے بارے میں',projects:'پروجیکٹس',pj:'ہمارے پروجیکٹس',pricing:'قیمتیں',faq:'سوالات',contact:'رابطہ',login:'لاگ اِن',cta:'مشاورت حاصل کریں',h1:'اپنا ڈیجیٹل مستقبل بنائیں',sub:'جدید ڈیجیٹل حل اور تخلیقی خدمات — آپ کے کاروبار کی ترقی کے لیے۔',exp:'خدمات دیکھیں',bc:'کال بُک کریں',os:'ہماری خدمات',op:'ہمارا پورٹ فولیو',ab:'VD کیوں منتخب کریں',pt:'پیکجز اور قیمتیں',ts:'ہمارے کلائنٹس کیا کہتے ہیں',fq:'اکثر پوچھے گئے سوالات',ct:'ہم سے رابطہ کریں'}};
+const lx=()=>$$('[data-i]').forEach(e=>e.textContent=D[lang][e.dataset.i]||D.en[e.dataset.i]);
+function toast(m,e){const d=document.createElement('div');d.textContent=m;if(e)d.className='e';$('#toast').append(d);setTimeout(()=>d.remove(),3200)}
+function modal(h){$('#mo').innerHTML=`<div class="box"><button class="x" aria-label="Close">×</button>${h}</div>`;ics($('#mo'));$('#mo').classList.add('on')}
+const close=()=>$('#mo').classList.remove('on');
+$('#mo').onclick=e=>{if(e.target.id=='mo'||e.target.className=='x')close()};
+const val=(f,fn)=>f.onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(f)),er=m=>$('.er',f).textContent=m;if(d.e!==undefined&&!/^\S+@\S+\.\S+$/.test(d.e))return er('Please enter a valid email');er('');fn(d,er)};
+const rl=r=>$$('[data-logo]',r).forEach(e=>{e.innerHTML=logo(e.dataset.logo)+'';e.removeAttribute('data-logo')});
+/* ===== Build page ===== */
+function drawS(){$('#sv').innerHTML=services.map((s,i)=>`<a href="#contact" class="cd rv in"><span class="n">0${i+1}</span><div class="ic">${I(s[0])}</div><h3>${s[1]}</h3><p>${s[2]}</p><span class="lm">Learn more ${I('arrow')}</span></a>`).join('')}drawS();
+let cat='All';function drawP(){const cats=['All',...new Set(works.map(w=>w.category))];$('#pf').innerHTML=cats.map(c=>`<button class="b sm o ${c==cat?'on':''}" data-c="${c}">${c}</button>`).join('');
+ $('#pg').innerHTML=works.filter(w=>cat=='All'||w.category==cat).map(w=>{const t=`<div class="th">${w.image?`<img src="${w.image}" alt="${w.title}" loading="lazy">`:I('img')}</div><h3 style="margin-top:0">${w.title}</h3><p>${w.category}</p>`;return w.link?`<a class="cd" href="${w.link}" target="_blank" rel="noopener">${t}</a>`:`<div class="cd nl">${t}</div>`}).join('');$$('#pf button').forEach(b=>b.onclick=()=>{cat=b.dataset.c;drawP()})}drawP();
+$('#wy').innerHTML=why.map(w=>`<div class="cd rv"><div class="ic">${I(w[0])}</div><h3>${w[1]}</h3><p>${w[2]}</p></div>`).join('');
+$('#tm').innerHTML=team.map(m=>`<div class="cd rv"><div class="ic" style="margin:auto">${I('user')}</div><h3>${m[0]}</h3><p style="font-weight:600;opacity:.95">${m[1]}</p><p style="font-size:.82rem;margin-top:10px">${m[4]}</p></div>`).join('');
+$('#fa').innerHTML=faqs.map(f=>`<div class="ac"><button>${f[0]}${I('plus')}</button><div>${f[1]}</div></div>`).join('');$$('.ac button').forEach(b=>b.onclick=()=>b.parentElement.classList.toggle('op'));
+let ri=0;function showR(){const x=revs[ri];$('#qt').innerHTML=`<div class="q">“</div><p>${x[0]}</p><b>${x[1]}</b><small style="opacity:.6">${x[2]}</small>`;$('#dt').innerHTML=revs.map((_,i)=>`<i class="${i==ri?'on':''}" data-r="${i}"></i>`).join('');$$('#dt i').forEach(d=>d.onclick=()=>{ri=+d.dataset.r;showR()})}showR();setInterval(()=>{ri=(ri+1)%revs.length;showR()},5000);
+$('#ph').textContent=$('#fp').textContent=CFG.phone;$('#em').textContent=$('#fe').textContent=CFG.email;$('#ci').textContent=$('#fc').textContent=CFG.city;
+rl(document);ics();
+/* ===== Interactions ===== */
+$('#bg').onclick=()=>$('#nv').classList.toggle('on');$$('#nv a').forEach(a=>a.onclick=()=>$('#nv').classList.remove('on'));
+$('#lg').onchange=e=>{lang=e.target.value;document.documentElement.dir=lang=='ur'?'rtl':'ltr';document.documentElement.lang=lang;lx()};
+addEventListener('scroll',()=>$('#hd').classList.toggle('sc',scrollY>20));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');if(e.target.dataset.n)count(e.target);io.unobserve(e.target)}}),{threshold:.15});
+function count(el){const n=+el.dataset.n,s=performance.now();(function f(x){const p=Math.min((x-s)/1500,1);el.textContent=Math.round(n*p);if(p<1)requestAnimationFrame(f)})(s)}
+$$('.rv,[data-n]').forEach(e=>io.observe(e));
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const id=e.target.id;$$('#nv a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+id))}}),{threshold:.45});$$('main section').forEach(s=>so.observe(s));
+$('#nl').onsubmit=e=>{e.preventDefault();api.newsletter(e.target[0].value).then(()=>{toast('Subscribed!');e.target.reset()})};
+val($('#cf'),(d,er)=>{if(!d.n||!d.m)return er('Name and message are required');api.contact(d).then(()=>{toast('Message sent!');$('#cf').reset()})});
+/* ===== Modals ===== */
+function book(){const sl=['10:00','11:00','12:00','14:00','15:00','16:00'];modal(`<h2>Free Consultation</h2><form class="f" id="bf" novalidate><input name="n" placeholder="Name"><input name="e" type="email" placeholder="Email"><input name="d" type="date" min="${new Date().toISOString().slice(0,10)}"><div class="sl">${sl.map((s,i)=>`<button type="button" class="b sm o" ${i==1||i==4?'disabled':''}>${s}</button>`).join('')}</div><div class="er"></div><button class="b">Confirm Booking</button></form>`);
+ let s=null;$$('.sl .b').forEach(b=>b.onclick=()=>{$$('.sl .b').forEach(x=>x.classList.remove('on'));b.classList.add('on');s=b.textContent});
+ val($('#bf'),(d,er)=>{if(!d.n||!d.d||!s)return er('Name, date and a time slot are required');close();toast(`Booked: ${d.d} at ${s}`)})}
+const MAIL='veqdevdigitalhouse@gmail.com';
+function consult(){modal(`<h2>Get a Consultation</h2><form class="f" id="cn" novalidate><input name="n" placeholder="Your name"><textarea name="m" rows="4" placeholder="Your message"></textarea><div class="er"></div><button class="b">Send Message</button><small style="opacity:.6;font-size:.75rem">Your message will be sent to ${MAIL}</small></form>`);
+ val($('#cn'),(d,er)=>{if(!d.n||!d.m)return er('Please enter your name and message');const bt=$('#cn button');bt.disabled=true;bt.textContent='Sending…';
+  fetch('https://formsubmit.co/ajax/'+MAIL,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({name:d.n,message:d.m,_subject:'New consultation request – VD website'})})
+  .then(r=>r.json()).then(j=>{if(String(j.success)!=='true')throw 0;close();toast('Message sent! We will contact you soon.')})
+  .catch(()=>{close();toast('Opening your email app to send the message…');location.href=`mailto:${MAIL}?subject=${encodeURIComponent('Consultation request from '+d.n)}&body=${encodeURIComponent(d.m+'\n\n– '+d.n)}`})})}
+function contactDirect(mode){const m=encodeURIComponent(CFG.msg);modal(`<h2>Contact Us Directly</h2><p style="margin:-8px 0 18px;opacity:.7">Tap a button to reach us instantly.</p>${CFG.nums.map(n=>`<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:14px;border:1.5px solid var(--c2);border-radius:14px;margin-bottom:10px"><b>${I('phone')} ${n[0]}</b><span style="display:flex;gap:8px"><a class="b sm" target="_blank" rel="noopener" href="https://wa.me/${n[1]}?text=${m}">${I('msg')} WhatsApp</a>${mode=='wa'?'':`<a class="b sm o" href="tel:+${n[1]}">${I('phone')} Call</a>`}</span></div>`).join('')}`)}
+$('#hc').onclick=()=>contactDirect();
+$$('[data-b]').forEach(b=>b.onclick=consult);$('#bk').onclick=consult;
+function checkout(i){const p=plans[i];modal(`<h2>Checkout</h2><p><b>${p[0]} Package</b></p><p style="margin-bottom:16px">Total: <b>$${p[1]}</b></p><form class="f pm" id="pf2" novalidate><label><input type="radio" name="m" checked>Credit / Debit Card</label><label><input type="radio" name="m">JazzCash</label><label><input type="radio" name="m">Easypaisa</label><input name="e" type="email" placeholder="Your email"><small style="opacity:.6">Integration-ready UI – no real payment is processed.</small><div class="er"></div><button class="b">Place Order</button></form>`);
+ val($('#pf2'),()=>{modal('<h2>Order Placed</h2><p>Thank you! We will contact you shortly. You can also log in to your portal.</p><br><button class="b" id="gl">Login</button>');$('#gl').onclick=()=>auth()})}
+function auth(tab='Login'){const su=tab=='Sign Up';modal(`<h2>${tab}</h2><form class="f" id="af" novalidate>${su?'<input name="n" placeholder="Full name">':''}<input name="e" type="email" placeholder="Email (use admin@… for admin demo)"><input name="p" type="password" id="pw" placeholder="Password"><label style="font-size:.85rem"><input type="checkbox" style="width:auto" onclick="pw.type=this.checked?'text':'password'"> Show password</label>${su?'<input name="c" type="password" placeholder="Confirm password">':''}<div class="er"></div><button class="b">${tab}</button><small>${su?'Have an account?':'New here?'} <a href="#" id="sw" style="text-decoration:underline">${su?'Login':'Sign Up'}</a></small></form>`);
+ $('#sw').onclick=e=>{e.preventDefault();auth(su?'Login':'Sign Up')};
+ val($('#af'),(d,er)=>{if(!d.p||d.p.length<6)return er('Password must be 6+ characters');if(su&&d.c!=d.p)return er('Passwords do not match');api.login(d).then(()=>{close();dash(/admin/i.test(d.e)?'admin':'client')})})}
+$('#li').onclick=()=>auth();
+/* ===== Dashboards ===== */
+const S={role:'',tab:''},menu={client:[['Overview','home'],['Project Progress','chart'],['Invoices','file']],admin:[['Overview','home'],['Users','users'],['Services','layers'],['Orders','file']]};
+const bars=v=>`<svg viewBox="0 0 ${v.length*40} 120" style="width:100%;height:150px">${v.map((x,i)=>`<rect x="${i*40+6}" y="${115-x}" width="28" height="${x}" rx="5" fill="#f6eedc"/>`).join('')}</svg>`;
+const pg=()=>Math.round(done.length/ms.length*100);
+function dash(r){S.role=r;S.tab='Overview';drawD();$('#ds').classList.add('on');document.body.style.overflow='hidden'}
+const stat=a=>`<div class="g g4">${a.map(s=>`<div class="cd" style="text-align:center"><h2>${s[1]}</h2>${s[0]}</div>`).join('')}</div>`;
+function drawD(){const r=S.role,tb=S.tab;let c='';
+ if(r=='client'){if(tb=='Overview')c=stat([['Active projects',2],['Completed',5],['Open invoices',1],['Progress',pg()+'%']])+`<div class="cd" style="margin-top:24px"><h3 style="margin-top:0">Welcome back</h3><p>Track your project progress and invoices here.</p></div>`;
+ else if(tb=='Project Progress')c=`<div class="cd"><h3 style="margin-top:0">Website Redesign</h3><div class="bar"><i style="width:${pg()}%"></i></div><p>${pg()}% complete</p><br>${ms.map((l,i)=>`<label style="display:block;padding:8px 0;cursor:pointer"><input type="checkbox" class="ls" data-i="${i}" ${done.includes(i)?'checked':''} style="width:auto"> ${l}</label>`).join('')}</div>`;
+ else c=`<div class="cd tw"><table><tr><th>Invoice</th><th>Service</th><th>Amount</th><th>Status</th></tr><tr><td>#INV-21</td><td>Web Development</td><td>$499</td><td><span class="st">Paid</span></td></tr><tr><td>#INV-22</td><td>Branding</td><td>$199</td><td><span class="st p">Pending</span></td></tr></table></div>`}
+ else{if(tb=='Overview')c=stat([['Users',users.length],['Services',services.length],['Orders',orders.length],['Revenue','$'+orders.filter(o=>o[4]=='Completed').reduce((a,o)=>a+o[3],0)]])+`<div class="g g2" style="margin-top:24px"><div class="cd"><h3 style="margin-top:0">Revenue</h3>${bars([40,60,45,80,70,100,90])}</div><div class="cd"><h3 style="margin-top:0">Registrations</h3>${bars([20,35,30,55,50,75,85])}</div></div>`;
+ else if(tb=='Users')c=`<div class="tp"><input id="us" placeholder="Search users…" style="max-width:260px"><button class="b sm" id="au">${I('plus')} Add User</button></div><div class="cd tw"><table><tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th></th></tr>${users.map(u=>`<tr><td>${u.n}</td><td>${u.e}</td><td>${u.r}</td><td><span class="st">${u.s}</span></td><td><button class="b sm dg" data-du="${u.id}">Delete</button></td></tr>`).join('')}</table></div>`;
+ else if(tb=='Services')c=`<div class="tp"><span></span><button class="b sm" id="as">${I('plus')} Add Service</button></div><div class="cd tw"><table><tr><th>Service</th><th>Description</th><th></th></tr>${services.map((s,i)=>`<tr><td>${s[1]}</td><td>${s[2].slice(0,50)}…</td><td><button class="b sm dg" data-ds="${i}">Delete</button></td></tr>`).join('')}</table></div>`;
+ else c=`<div class="cd tw"><table><tr><th>ID</th><th>Customer</th><th>Service</th><th>Amount</th><th>Status</th></tr>${orders.map(o=>`<tr><td>${o[0]}</td><td>${o[1]}</td><td>${o[2]}</td><td>$${o[3]}</td><td><span class="st ${o[4]=='Pending'?'p':o[4]=='Failed'?'x':''}">${o[4]}</span></td></tr>`).join('')}</table></div>`}
+ $('#ds').innerHTML=`<aside class="sd" id="sd"><div data-logo="st" style="width:64px;margin-bottom:18px"></div><small style="opacity:.45;padding:0 14px;letter-spacing:.15em">${r.toUpperCase()}</small>${menu[r].map(m=>`<a class="${m[0]==tb?'on':''}" data-t="${m[0]}">${I(m[1])}${m[0]}</a>`).join('')}<a id="ex">${I('back')}Website</a><a id="lo">${I('out')}Logout</a></aside><div class="mn"><div class="tp"><div><button class="b sm o mb" id="sb" aria-label="Menu">${I('menu')}</button> <b style="font-size:1.4rem;font-family:Georgia,serif">${tb}</b></div><span style="display:flex;gap:14px;align-items:center">${I('bell')} ${I('user')} ${r=='admin'?'Admin VD':'Sara Khan'}</span></div>${c}</div>`;
+ rl($('#ds'));
+ $$('[data-t]',$('#ds')).forEach(a=>a.onclick=()=>{S.tab=a.dataset.t;drawD()});$('#sb').onclick=()=>$('#sd').classList.toggle('on');
+ const out=()=>{$('#ds').classList.remove('on');document.body.style.overflow=''};$('#ex').onclick=out;$('#lo').onclick=out;
+ $$('.ls').forEach(k=>k.onchange=()=>{const i=+k.dataset.i;k.checked?done.push(i):done.splice(done.indexOf(i),1);drawD();toast('Progress updated')});
+ $$('[data-du]').forEach(b=>b.onclick=()=>{if(confirm('Delete this user?')){users=users.filter(u=>u.id!=b.dataset.du);drawD()}});
+ $$('[data-ds]').forEach(b=>b.onclick=()=>{if(confirm('Delete this service?')){services.splice(+b.dataset.ds,1);drawD();drawS()}});
+ const us=$('#us');if(us)us.oninput=()=>$$('tr',$('#ds')).forEach((tr,i)=>{if(i)tr.style.display=tr.textContent.toLowerCase().includes(us.value.toLowerCase())?'':'none'});
+ if($('#au'))$('#au').onclick=()=>{modal('<h2>Add User</h2><form class="f" id="nu" novalidate><input name="n" placeholder="Full name"><input name="e" type="email" placeholder="Email"><select name="r" style="width:100%"><option>Client</option><option>Admin</option></select><div class="er"></div><button class="b">Save</button></form>');val($('#nu'),(d,er)=>{if(!d.n)return er('Name is required');users.push({id:Date.now(),n:d.n,e:d.e,r:d.r,s:'Active'});close();drawD();toast('User added')})};
+ if($('#as'))$('#as').onclick=()=>{modal('<h2>Add Service</h2><form class="f" id="ns" novalidate><input name="t" placeholder="Service name"><input name="d" placeholder="Short description"><div class="er"></div><button class="b">Save</button></form>');val($('#ns'),(d,er)=>{if(!d.t||!d.d)return er('Name and description are required');services.push(['layers',d.t,d.d]);close();drawD();drawS();toast('Service added')})}}
+/* ===== WhatsApp & Chatbot ===== */
+$('#wa').href=`https://wa.me/${CFG.wa}?text=${encodeURIComponent(CFG.msg)}`;$('#wa').onclick=e=>{e.preventDefault();contactDirect('wa')};
+const say=(x,u)=>{const d=document.createElement('div');d.className='m'+(u?' u':'');d.textContent=x;$('#ms').append(d);$('#ms').scrollTop=1e9;return d};say('Hi! How can I help you today?');
+function ask(q){say(q,1);const ty=say('typing…');setTimeout(()=>{ty.remove();const l=q.toLowerCase();say(l.includes('human')?'Connecting you to a human… please use the WhatsApp button.':l.includes('pric')?'See the Pricing section – plans start from $199.':l.includes('service')?'We offer Web Development, UI/UX Design, Digital Marketing and Branding.':'Thanks! Our team will reply soon.')},900)}
+$('#cb').onclick=()=>contactDirect();$$('.cs span').forEach(s=>s.onclick=()=>ask(s.textContent));
+$('#cfm').onsubmit=e=>{e.preventDefault();const v=$('#cin').value.trim();if(v){ask(v);$('#cin').value=''}};
+</script>
+</body>
+</html>
